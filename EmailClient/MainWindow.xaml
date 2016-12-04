@@ -1,0 +1,41 @@
+﻿<Window x:Class="EmailClient.MainWindow"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+         TextElement.FontWeight="Regular"
+         TextElement.FontSize="13"
+         TextOptions.TextFormattingMode="Ideal"
+         TextOptions.TextRenderingMode="Auto"
+         Background="{DynamicResource MaterialDesignPaper}"
+         FontFamily="{DynamicResource MaterialDesignFont}"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmailClient"
+        mc:Ignorable="d"
+        Title="EmailClient" Height="600" Width="800" MinHeight="500" MinWidth="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="87*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="327*"/>
+            </Grid.ColumnDefinitions>
+            
+
+            <materialDesign:Card Margin="5,30,3,10" Grid.Column="0" VerticalAlignment="Stretch" >
+                <ListBox x:Name="emailList"/>
+            </materialDesign:Card>
+            <materialDesign:Card Margin="5,30,3,0" Height="140" Grid.Column="1" />
+            <materialDesign:Card Margin="5,93,4,10" Grid.Column="1" VerticalAlignment="Stretch" />
+        </Grid>
+        <Menu x:Name="menu" Height="50" VerticalAlignment="Top" Grid.RowSpan="2" Background="#FFECECEC">
+            <MenuItem Header="Update" Height="48"/>
+            <MenuItem Header="New message" Height="48"/>
+            <MenuItem Header="Settings" Click="OpenSettings"/>
+        </Menu>
+    </Grid>
+</Window>

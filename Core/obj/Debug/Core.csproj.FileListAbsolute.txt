@@ -1,0 +1,5 @@
+D:\Code\TestEmails\Core\bin\Debug\Core.dll
+D:\Code\TestEmails\Core\bin\Debug\Core.pdb
+D:\Code\TestEmails\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\Code\TestEmails\Core\obj\Debug\Core.dll
+D:\Code\TestEmails\Core\obj\Debug\Core.pdb
