@@ -9,8 +9,8 @@ namespace Core
     [Serializable]
     public class Data
     {
-        public string HostStmp { get; set; }
-        public int PortStmp { get; set; }
+        public string HostSmtp { get; set; }
+        public int PortSmtp { get; set; }
         public string HostPop3 { get; set; }
         public int PortPop3 { get; set; }
         public bool UseSSL { get; set; }

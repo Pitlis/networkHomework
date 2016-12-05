@@ -5,24 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EmailClient"
         mc:Ignorable="d"
-        Title="Settings" Height="350" Width="400" MinHeight="350" MinWidth="400" MaxHeight="350" MaxWidth="400">
+        Title="Settings" Height="350" Width="400" MinHeight="350" MinWidth="400" MaxHeight="350" MaxWidth="400" Loaded="Window_Loaded">
     <Grid>
         <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="98,275,0,0" VerticalAlignment="Top" Width="198" Click="btnSave_Click"/>
-        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Height="30" Margin="140,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233"/>
-        <Label x:Name="label" Content="Your Email address:" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPass" HorizontalAlignment="Left" Height="30" Margin="140,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233"/>
-        <Label x:Name="label_Copy" Content="Your password:" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtHostStmp" HorizontalAlignment="Left" Height="30" Margin="52,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
-        <Label x:Name="label_Copy1" Content="Host:" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPortStmp" HorizontalAlignment="Left" Height="30" Margin="320,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
-        <Label x:Name="label_Copy2" Content="Port:" HorizontalAlignment="Left" Margin="269,135,0,0" VerticalAlignment="Top"/>
+		<TextBox   x:Name="txtUser" HorizontalAlignment="Left" Height="30" Margin="140,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="233"/>
+		<Label x:Name="label" Content="Your Email address:" HorizontalAlignment="Left" Margin="10,21,0,0" VerticalAlignment="Top"/>
+		<PasswordBox x:Name="txtPass" HorizontalAlignment="Left" Height="30" Margin="140,47,0,0" VerticalAlignment="Top" Width="233"/>
+		<Label x:Name="label_Copy" Content="Your password:" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtHostStmp" HorizontalAlignment="Left" Height="30" Margin="52,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
+        <Label x:Name="label_Copy1" Content="Host:" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPortStmp" HorizontalAlignment="Left" Height="30" Margin="320,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+        <Label x:Name="label_Copy2" Content="Port:" HorizontalAlignment="Left" Margin="269,130,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label1" Content="SMTP Server" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.47,-0.096" FontWeight="Bold"/>
-        <TextBox x:Name="txtHostPop3" HorizontalAlignment="Left" Height="30" Margin="47,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
-        <Label x:Name="label_Copy3" Content="Host:" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPortPop3" HorizontalAlignment="Left" Height="30" Margin="320,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
-        <Label x:Name="label_Copy4" Content="Port:" HorizontalAlignment="Left" Margin="269,202,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtHostPop3" HorizontalAlignment="Left" Height="30" Margin="47,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
+        <Label x:Name="label_Copy3" Content="Host:" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPortPop3" HorizontalAlignment="Left" Height="30" Margin="320,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="53"/>
+        <Label x:Name="label_Copy4" Content="Port:" HorizontalAlignment="Left" Margin="269,197,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label1_Copy" Content="POP3 Server" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.47,-0.096" FontWeight="Bold"/>
         <CheckBox x:Name="checkBox" Content="Use SSL" HorizontalAlignment="Left" Margin="27,245,0,0" VerticalAlignment="Top" IsChecked="True"/>
 
-    </Grid>
+	</Grid>
 </Window>
