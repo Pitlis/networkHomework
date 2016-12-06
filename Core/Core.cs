@@ -54,7 +54,7 @@ namespace Core
 
 		public void SendMessage(string to, string subject, string message)
 		{
-			EmailSender sender = new EmailSender(data.HostSmtp, data.PortPop3, data.User, data.Password);
+			EmailSender sender = new EmailSender(data.HostSmtp, data.PortSmtp, data.User, data.Password);
 			if (data.UseSSL)
 			{
 				sender.SendSslEmail(to, subject, message);

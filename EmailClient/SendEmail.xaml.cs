@@ -36,6 +36,8 @@ namespace EmailClient
 					throw new Exception("'To' cannot be empty");
 				}
 				Container.Core.SendMessage(to, subject, message);
+				MessageBox.Show("Successful sended!", "Success", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+				Close();
 			}
 			catch(Exception ex)
 			{

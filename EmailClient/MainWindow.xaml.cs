@@ -40,6 +40,7 @@ namespace EmailClient
 			try
 			{
 				Container.Core.UpdateEmailList();
+				emailList.ItemsSource = null;
 				emailList.ItemsSource = Container.Core.data.Emails;
 			}
 			catch (Exception ex)
